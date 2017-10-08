@@ -1,0 +1,15 @@
+<div class="bgd container">
+	<div class=" col-sm-3 col-lg-3 col-md-3"
+		ng-repeat="article in viewCtrl.articles">
+				
+			<div class="ProductBgrd" style="height:400px;margin-bottom:20px;">
+				<img class="slika" src={{article.img}} alt="HTML5 Icon" style="width:200px;height:250px;">
+				<p class="td">Naziv: {{article.name}}</p>
+				<p class="td">Cena: {{article.price}} din</p>
+				<input hidden type="text" name="name" value="{{article.name}}">
+				<input hidden type="text" name="img" value="{{article.img}}">
+				<input hidden type="text" name="price" value="{{article.price}}">
+				<a href="#/buy/{{article._id}}" ng-show="indexCtrl.role!='admin'"><input type="submit" value="Kupi"></input></a>
+			</div>	
+	</div>
+</div>

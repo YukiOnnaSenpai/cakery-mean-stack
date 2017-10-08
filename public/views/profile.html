@@ -1,0 +1,26 @@
+<div class="bgd-prof">
+    <h1 class="h"> Vaši podaci :</h1>
+    <hr>
+    <ul>
+        <li class="h-txt">Korisnicko ime: {{profileCtrl.user.username}}</li>
+        <li class="h-txt">Ime: {{profileCtrl.user.fname}}</li>
+        <li class="h-txt">Prezime: {{profileCtrl.user.lname}}</li>
+        <li class="h-txt">Tip: {{profileCtrl.user.role}}</li>
+        <li class="h-txt">Email: {{profileCtrl.user.email}}</li>
+    </ul>
+    <br><br><br><br>
+    <h1 class="h"> Vaše porudzbine :</h1>
+    <hr>
+    <ul ng-repeat="receipt in profileCtrl.receipts">
+        <li class="h-txt">Naziv artikla: {{receipt.article.name}}</li>
+        <li class="h-txt">Cena artikla: {{receipt.article.price}}</li>
+        <li class="h-txt">Datum porudzbine: {{receipt.date}}</li>
+        <li class="h-txt">Kolicina artikla: {{receipt.quantity}}</li>
+        <li class="h-txt">Ukus artikla: {{receipt.taste}}</li>
+        <li class="h-txt">Boja artikla: {{receipt.color}}</li>
+        <li class="h-txt">Ukras artikla: {{receipt.topping}}</li>
+        <li class="h-txt">Poruka artikla: {{receipt.note}}</li>
+        <li class="h-txt">Status porudzbine: {{receipt.status}}</li>
+        <hr>
+    </ul>
+</div>

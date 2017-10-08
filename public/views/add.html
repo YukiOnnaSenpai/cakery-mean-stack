@@ -1,0 +1,27 @@
+<div class="bgd-prof">
+     <h1 class="h">Dodaj artikal </h1>
+    <hr>
+            <div class="form-group">
+                <input autocomplete="off" ng-model="addCtrl.type" autofocus class="form-control" name="type" placeholder="Tip artikla" type="text" required/>
+            </div>
+            <div class="form-group">
+                <input class="form-control" ng-model="addCtrl.name" name="name" placeholder="Naziv artikla" type="text" required/>
+            </div>
+            <div class="form-group">
+                <input class="form-control" ng-model="addCtrl.price" name="price" placeholder="Cena" type="number" required/>
+            </div>
+            <div class="form-group">
+                <input autocomplete="off" ng-model="addCtrl.stock" autofocus class="form-control" name="stock" placeholder="Zalihe" type="number" required/>
+            </div>
+            <div class="form-group">
+                <input autocomplete="off" ng-model="addCtrl.description" autofocus class="form-control" name="note" placeholder="Opis" type="text">
+            </div>
+            <div class="form-group">
+                <input autocomplete="off" ng-model="addCtrl.url" autofocus class="form-control" name="img" placeholder="URL slike" type="text" required/>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" type="submit" ng-click="addCtrl.add()">Dodaj</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
